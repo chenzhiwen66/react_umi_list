@@ -1,0 +1,63 @@
+@plugin "@/style/unit-plugin.js";
+
+.download_box {
+    // height: 100%;
+    height: pxToVw(500);
+    overflow: auto;
+    padding: pxToVw(10) 0;
+
+
+    .item_connect {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: pxToVw(20) 0;
+
+        .item_number {
+            color: #a7a7a7;
+            margin: 0 pxToVw(10);
+        }
+
+        .item_detail {
+            margin: 0 0 0 pxToVw(20);
+
+            .title {
+                width: pxToVw(230);
+
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .type {
+                font-size: pxToVw(14);
+                color: #a7a7a7;
+                margin: pxToVw(5) 0 pxToVw(15) 0;
+            }
+
+            .scoure {
+                display: flex;
+                align-items: center;
+                font-size: pxToVw(14);
+                color: #a7a7a7;
+            }
+        }
+    }
+
+    .item_connect::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        left: pxToVw(10);
+        bottom: pxToVw(-10);
+        width: pxToVw(365);
+        background: #f4f4f4
+    }
+}
+.download_box::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100vw;
+    background: #f4f4f4
+}

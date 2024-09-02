@@ -1,0 +1,47 @@
+@plugin "@/style/unit-plugin.js"; 
+
+.recommend_box{
+    position: relative;
+    padding: pxToVw(15) pxToVw(15) 0 pxToVw(15);
+    .title{
+        display: inline-block;
+        margin: pxToVw(15) auto;
+        font-weight: 600;
+    }
+
+    .recommend_list{
+        .recommend_content{
+            display: flex;
+            overflow: auto;
+
+            .recommend_item{
+                width: pxToVw(95);
+                height: pxToVw(150);
+                margin: 0 pxToVw(15) 0 0;
+                text-align: center;
+                flex-shrink:0;
+                .recommend_item_name{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    margin-top: pxToVw(5);
+                }
+                .recommend_item_type{
+                    font-size: pxToVw(15);
+                    color: #a2a2a2;
+                    margin: pxToVw(3) 0;
+
+                }
+            }
+        }
+    }
+
+}
+.recommend_box::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    width: 100vw;
+    background:#f4f4f4
+}

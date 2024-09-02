@@ -1,2 +1,19 @@
-# react_umi_list
-react+umi4+ant+less
+# 前端⼯程師測試項⽬A
+
+## 环境安裝
+node 版本 18.14.0
+
+### 功能实现
+1、顶部列表為推薦App列表
+2、底部列表為下載量最多的免費App列表
+3、搜索欄
+
+实现响应式设计
+列表实现懒加载、防抖等功能
+
+### 技术框架
+React + umi4 + antd + less
+
+### 執行
+1、yarn 
+2、yarn start
